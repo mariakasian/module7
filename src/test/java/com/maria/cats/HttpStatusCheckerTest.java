@@ -20,8 +20,7 @@ class HttpStatusCheckerTest {
     }
 
     @Test
-    void testThatInvalidCodeThrowsException() throws IOException {
-        Assertions.assertThrows(FileNotFoundException.class, () -> { getStatusImage(1000);
-        });
+    void testThatInvalidCodeThrowsException() {
+        Assertions.assertThrows(FileNotFoundException.class, () -> getStatusImage(1000));
     }
 }

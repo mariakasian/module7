@@ -12,7 +12,6 @@ class HttpStatusImageDownloaderTest {
     @Test
     void testThatValidDownloadStatusImageCorrectly() throws IOException {
         int code = 200;
-        String imageUrl = "https://http.cat/200.jpg";
 
         downloadStatusImage(code);
 
